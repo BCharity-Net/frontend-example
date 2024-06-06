@@ -1,6 +1,8 @@
 import Button from "@/components/Navbar/Button";
+import { NextRouter, useRouter } from "next/router";
 
 const Home = () => {
+  const router: NextRouter = useRouter();
   return (
     <>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -15,6 +17,13 @@ const Home = () => {
           }}
         >
           Get data
+        </Button>
+        <Button
+          onClick={() => {
+            router.push("/p/")
+          }}
+        >
+          Go to page views
         </Button>
       </div>
     </>
