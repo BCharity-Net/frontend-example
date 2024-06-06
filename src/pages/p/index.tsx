@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MovieData } from "../api/dummy";
+import MovieCard from "@/components/MovieCard";
 
 const PageView = () => {
   const [movies, setMovies] = useState<MovieData[]>([])
@@ -9,7 +10,6 @@ const PageView = () => {
     const fetchData = async () => {
       const data = await fetch("/api/dummy")
       const json = await data.json()
-      console.log(json)
       setMovies(json)
       setLoading(false)
     }
@@ -24,8 +24,8 @@ const PageView = () => {
   )
 
   const Loaded = () => (
-    <div>
-      Loaded
+    <div className="flex-col space-y-2 p-2 rounded-md bg-slate-800">
+      {movies && movies.map((data, index) => <MovieCard key={index} data={data} />)}
     </div>
   )
 
