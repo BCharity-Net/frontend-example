@@ -1,9 +1,9 @@
-const Home = () => {
+const PageNotFound = () => {
   return (
     <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-      Test body
+      404 page not found
     </div>
   );
 }
 
-export default Home;
+export default PageNotFound;

@@ -19,7 +19,11 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
-      <Component {...pageProps} />
+      <main
+        className="flex min-h-screen flex-col space-y-8 p-24"
+      >
+        <Component {...pageProps} />
+      </main>
     </Layout>
   );
 }
