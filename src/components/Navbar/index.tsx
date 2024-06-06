@@ -25,6 +25,11 @@ const Navbar: FC = () => {
         }}>
           Button 2
         </Button>
+        <Button onClick={() => {
+          router.push("/profile")
+        }}>
+          Profile
+        </Button>
       </div>
     </div>
   );
