@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+      <div className="z-10 max-w-6xl w-full items-center justify-between font-mono text-sm lg:flex">
         Test body
       </div>
       <div className="flex">
@@ -50,11 +50,11 @@ const Home = () => {
           Go to page views
         </Button>
       </div>
-      <div className="flex space-x-4">
-        <input className="bg-white-800 px-4 rounded-md" placeholder="testnet handle" onChange={(e) => {
+      <div className="flex space-x-3">
+        <input className="bg-white-800 px-4 rounded-md" placeholder="handle as username" onChange={(e) => {
           setHandle(e.target.value)
         }} />
-        <input className="bg-white-800 px-4 rounded-md" placeholder="target address" onChange={(e) => {
+        <input className="bg-white-800 px-4 rounded-md" placeholder="target wallet address" onChange={(e) => {
           setAddress(e.target.value)
         }} />
         {loading ?
