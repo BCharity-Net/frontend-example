@@ -10,7 +10,7 @@ const Navbar: FC = () => {
       <div className="text-3xl" onClick={() => {
         router.push("/")
       }}>
-        Create Lens Profile on Testnet!
+        Create Good Profile on Testnet!
       </div>
       <div className="flex space-x-2">
         <Button onClick={() => {
