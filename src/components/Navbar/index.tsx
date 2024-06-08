@@ -1,16 +1,16 @@
+import { NextRouter, useRouter } from "next/router";
 import { FC } from "react";
 import Button from "./Button";
-import { NextRouter, useRouter } from "next/router";
 
 const Navbar: FC = () => {
   const router: NextRouter = useRouter();
 
   return (
-    <div className="bg-slate-800 p-4 flex space-x-20 items-center">
+    <div className="bg-white-800 p-4 flex space-x-20 items-center">
       <div className="text-3xl" onClick={() => {
         router.push("/")
       }}>
-        Hello navbar
+        Hello Lens test!
       </div>
       <div className="flex space-x-2">
         <Button onClick={() => {
