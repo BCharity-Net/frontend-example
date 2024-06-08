@@ -51,10 +51,10 @@ const Home = () => {
         </Button>
       </div>
       <div className="flex space-x-4">
-        <input className="bg-gray-800 px-4 rounded-md" placeholder="testnet handle" onChange={(e) => {
+        <input className="bg-white-800 px-4 rounded-md" placeholder="testnet handle" onChange={(e) => {
           setHandle(e.target.value)
         }} />
-        <input className="bg-gray-800 px-4 rounded-md" placeholder="target address" onChange={(e) => {
+        <input className="bg-white-800 px-4 rounded-md" placeholder="target address" onChange={(e) => {
           setAddress(e.target.value)
         }} />
         {loading ?
