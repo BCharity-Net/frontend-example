@@ -26,7 +26,7 @@ const Profile = () => {
         Profile
       </div>
       <div className="flex space-x-4">
-        <input className="bg-gray-800 px-4 rounded-md" placeholder="testnet handle" onChange={(e) => {
+        <input className="bg-white-800 px-4 rounded-md" placeholder="handle as username" onChange={(e) => {
           setHandle(e.target.value)
         }} />
         {loading ?
